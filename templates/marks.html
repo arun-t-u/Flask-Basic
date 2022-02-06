@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>mark</title>
+{% endblock %}
+
+{% block body %}
+
+    <table border=1>
+        {% for key, value in marks.items() %}
+        <tr>
+            <th>{{ key }}</th>
+            <th>{{ value }}</th>
+        </tr>
+        {% endfor  %}
+    </table>
+
+{% endblock %}
